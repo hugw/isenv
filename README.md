@@ -1,22 +1,28 @@
 # Environment Utility Functions
 
-### API
+```
+$ npm install isenv
+```
 
-#### CURRENT_ENV
+## API
+
+### CURRENT_ENV
 
 Return current environment.
 
 Usage:
+
 ```javascript
 import { CURRENT_ENV } from 'isenv'
 console.log(CURRENT_ENV) # => development
 ```
 
-#### IS_DEV / IS_TEST / IS_STAG / IS_PROD
+### IS_DEV / IS_TEST / IS_STAG / IS_PROD
 
 Return a boolean based on current environment variable tested.
 
 Usage:
+
 ```javascript
 import { IS_DEV, IS_TEST, IS_STAG, IS_PROD } from 'isenv'
 
@@ -28,12 +34,13 @@ console.log(IS_TEST) # => false
 console.log(IS_PROD) # => true
 ```
 
-#### isDev / isStag / isTest / isProd
+### isDev / isStag / isTest / isProd
 
 Test current the environment and return variables passed as arguments
 in case of position and negative results. Second param is optional and defaults to "false".
 
 Usage:
+
 ```javascript
 import { isDev, isStag, isTest, isProd } from 'isenv'
 
@@ -55,12 +62,13 @@ console.log(isProd(a, b)) # => a
 console.log(isProd(a)) # => a
 ```
 
-#### isntDev / isntStag / isntTest / isntProd
+### isntDev / isntStag / isntTest / isntProd
 
 Test current the environment using exclusive contexts and return variables passed as arguments
 in case of position and negative results. Second param is optional and defaults to "false".
 
 Usage:
+
 ```javascript
 import { isntDev, isntStag, isntTest, isntProd } from 'isenv'
 
