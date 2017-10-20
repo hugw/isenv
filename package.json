@@ -1,0 +1,38 @@
+{
+  "name": "isenv",
+  "version": "0.0.0",
+  "description": "Environment Utility Functions",
+  "keywords": [
+    "NODE_ENV",
+    "utils",
+    "is-env",
+    "is-dev",
+    "is-test",
+    "is-prod",
+    "environment"
+  ],
+  "repository": "https://github.com/hugw/isenv",
+  "license": "MIT",
+  "author": "Hugo W. <me@hugw.io>",
+  "main": "./dist",
+  "scripts": {
+    "build": "babel ./src -s -D -d dist",
+    "postinstall": "npm run build",
+    "test": "NODE_ENV=test jest . --verbose --colors --forceExit",
+    "test:watch": "npm run test -- --watch"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
