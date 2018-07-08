@@ -1,6 +1,6 @@
 {
   "name": "isenv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Environment Utility Functions",
   "keywords": [
     "NODE_ENV",
