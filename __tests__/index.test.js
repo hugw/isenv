@@ -2,7 +2,7 @@
  * Test specs coverage
  *
  * @copyright Copyright (c) 2017, hugw.io
- * @author Hugo W - me@hugw.io
+ * @author Hugo W - contact@hugw.io
  * @license MIT
  */
 

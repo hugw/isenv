@@ -13,12 +13,12 @@
   ],
   "repository": "https://github.com/hugw/isenv",
   "license": "MIT",
-  "author": "Hugo W. <me@hugw.io>",
+  "author": "Hugo W. <contact@hugw.io>",
   "main": "./dist",
   "scripts": {
     "build": "babel ./src -s -D -d dist",
     "lint": "eslint .",
-    "postinstall": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "NODE_ENV=test jest . --verbose --colors --forceExit",
     "test:watch": "npm run test -- --watch"
   },

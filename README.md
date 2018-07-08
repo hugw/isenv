@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/hugw/isenv/tree/master.svg?style=svg&circle-token=73d118d816ff8e8ab100ced37bc7c4b6515db025)](https://circleci.com/gh/hugw/isenv/tree/master)
+# Environment Utility Functions (DEPRECATED)
 
-# Environment Utility Functions
+This package has been deprecated in favor of [Node Toolkit](https://github.com/hugw/ndtk).
 
 ```
 $ npm install isenv
@@ -96,7 +96,7 @@ console.log(isntProd(a)) # => false
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Hugo W. - me@hugw.io
+Copyright (c) 2017 Hugo W. - contact@hugw.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
